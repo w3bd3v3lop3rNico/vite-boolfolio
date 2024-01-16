@@ -16,8 +16,9 @@ export default {
         fetchProjData() {
             axios.get(`${this.url}/projects`)
                 .then((res) => {
-                    console.log(res)
-                    this.projects = res.data.results
+                    
+                    this.projects = res.data.results.data
+                    console.log(res.data.results.data)
                 })
         }
     },
@@ -27,9 +28,27 @@ export default {
 }
 </script>
 <template>
+    <div class="container title-box">
+        <h1>I miei progetti</h1>
+    </div>
+    
     <div class="container">
-        <ProjCard class="card prject-card" v-for="project in projects" :project="project" :key="project.id" />
+        <div class="row">
+            <ProjCard class="card project-card col-4" v-for="project in projects" :project="project" :key="project.id" />
+        </div>
+        
     </div>
 </template>
-<style>
+<style lang="scss" scoped>
+@use "../style/general.scss" as *;
+
+.title-box {
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+}
+.project-card {
+    padding: 0 10px;
+    
+}
 </style>

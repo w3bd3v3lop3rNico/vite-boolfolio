@@ -16,3 +16,13 @@ a {
 img {
     width: 100%;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+    
+}
