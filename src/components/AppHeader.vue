@@ -13,7 +13,7 @@ import { router } from '../router';
                 </li>
                 <li>
                     <router-link :to="{ name: 'projects.index' }">
-                        Blog
+                        Portfolio
                     </router-link>
                 </li>
             </ul>

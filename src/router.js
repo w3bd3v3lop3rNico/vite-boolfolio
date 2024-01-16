@@ -12,7 +12,7 @@ const router = createRouter({
             component: Homepage,
         },
         {
-			path: '/blog',
+			path: '/portfolio',
 			name: 'projects.index',
 			component: ProjectIndex,
 		},
