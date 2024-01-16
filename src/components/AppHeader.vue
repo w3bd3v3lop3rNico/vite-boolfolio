@@ -16,6 +16,11 @@ import { router } from '../router';
                         Portfolio
                     </router-link>
                 </li>
+                <li>
+                    <router-link :to="{ name: 'contacts' }">
+                        Contact Us
+                    </router-link>
+                </li>
             </ul>
         </nav>
     </div>
