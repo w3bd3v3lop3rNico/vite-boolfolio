@@ -23,12 +23,12 @@ const router = createRouter({
 			name: 'contacts',
 			component: ContactUs,
 		},
-        // {
-		// 	path: '/portfolio/:slug',
-		// 	name: 'projects.show',
-		// 	props: true,
-		// 	component: ProjectShow,
-		// },
+        {
+			path: '/portfolio/:slug',
+			name: 'projects.show',
+			props: true,
+			component: ProjectShow,
+		},
     ]
 })
 

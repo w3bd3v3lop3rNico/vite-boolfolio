@@ -12,11 +12,11 @@ export default {
     <div class="card-content">
         <div class="card-header ">
             <h4>{{ project.title }}</h4>
-            <!-- <p v-if="project.technology">{{ project.technology.name }}</p> -->
+           
         </div>
         <div class="card-body">
             <p class="card-text">
-                {{ project.description }}
+                <router-link :to="{ name: 'projects.show', params: { slug: project.slug }}" >Leggi articolo...</router-link>
             </p>
         </div>
     </div>
@@ -26,6 +26,11 @@ export default {
 
 .card-content .card-header, .card-body{
     background-color: aqua;
+
+    .card-text{
+        color: red;
+    }
     
 }
+
 </style>
