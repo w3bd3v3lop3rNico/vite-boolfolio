@@ -1,7 +1,24 @@
 <script>
+import { router } from '../router';
+
 </script>
 <template>
-    <h1>Header</h1>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <router-link :to="{ name: 'home' }">
+                        Home
+                    </router-link>
+                </li>
+                <li>
+                    <router-link :to="{ name: 'projects.index' }">
+                        Blog
+                    </router-link>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
 </template>
 <style>
