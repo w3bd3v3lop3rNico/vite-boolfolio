@@ -1,14 +1,15 @@
 <script>
-    import ProjectIndex from './pages/Index.vue';
+    import AppHeader from './components/AppHeader.vue'
     export default {
         components: {
-            ProjectIndex,
+            AppHeader,
         }
     }
 </script>
 
 <template>
-    <ProjectIndex />
+    <AppHeader />
+    <router-view></router-view>
   
 </template>
 
